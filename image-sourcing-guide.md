@@ -38,30 +38,31 @@
 - **Variety-Specific**: Ensure photos show the exact varieties mentioned
 - **Multiple Seasons**: Show flowers, fruit, and fall foliage where applicable
 - **Plant Context**: Show plant in landscape setting when possible
+- **WebP Format**: Convert to WebP for 25-35% better compression than JPEG
 
 ## Photo Organization Strategy:
 ```
 /images/
   /fruit-trees/
-    liberty-apple.jpg
-    freedom-apple.jpg
-    reliance-peach.jpg
+    liberty-apple.webp
+    freedom-apple.webp
+    reliance-peach.webp
   /shrubs-berries/
-    caroline-raspberry.jpg
-    elderberry-flowers.jpg
-    elderberry-berries.jpg
-    chokeberry-fall.jpg
+    caroline-raspberry.webp
+    elderberry-flowers.webp
+    elderberry-berries.webp
+    chokeberry-fall.webp
   /groundcover-herbs/
-    wild-strawberry.jpg
-    creeping-thyme.jpg
-    wild-bergamot.jpg
-    ostrich-fern-fiddleheads.jpg
-    ostrich-fern-mature.jpg
+    wild-strawberry.webp
+    creeping-thyme.webp
+    wild-bergamot.webp
+    ostrich-fern-fiddleheads.webp
+    ostrich-fern-mature.webp
 ```
 
 ## Implementation Plan:
 1. Source and download images with proper licensing
-2. Optimize for web (compress to ~100-200KB each)
+2. Convert to WebP format and optimize for web (compress to ~50-150KB each)
 3. Add to fruit tree selection table
 4. Enhance plant cards in understory section
 5. Create image gallery in shopping list section

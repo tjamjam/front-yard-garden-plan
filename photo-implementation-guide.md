@@ -25,20 +25,20 @@ Your website is now structured with visual placeholders ready for plant variety 
 
 ### Step 1: Source and Prepare Images
 - **Image Size**: 800px wide minimum, 600px tall for best quality
-- **File Format**: JPG or PNG (JPG recommended for smaller file sizes)
+- **File Format**: WebP (recommended for best compression and quality)
 - **File Names**: Use descriptive names matching the plants:
   ```
-  liberty-apple.jpg
-  freedom-apple.jpg
-  reliance-peach.jpg
-  caroline-raspberry.jpg
-  elderberry-flowers.jpg
-  elderberry-berries.jpg
-  chokeberry-fall.jpg
-  wild-strawberry.jpg
-  creeping-thyme.jpg
-  wild-bergamot.jpg
-  ostrich-fern.jpg
+  liberty-apple.webp
+  freedom-apple.webp
+  reliance-peach.webp
+  caroline-raspberry.webp
+  elderberry-flowers.webp
+  elderberry-berries.webp
+  chokeberry-fall.webp
+  wild-strawberry.webp
+  creeping-thyme.webp
+  wild-bergamot.webp
+  ostrich-fern.webp
   ```
 
 ### Step 2: Add Images to Your Repository
@@ -63,7 +63,7 @@ Replace this placeholder structure:
 
 With this image structure:
 ```html
-<img src="images/liberty-apple.jpg" alt="Liberty Apple tree with fruit" class="w-full h-48 object-cover">
+<img src="images/liberty-apple.webp" alt="Liberty Apple tree with fruit" class="w-full h-48 object-cover">
 ```
 
 #### For Plant Cards (6 locations):
@@ -81,7 +81,7 @@ Replace this placeholder structure:
 
 With this image structure:
 ```html
-<img src="images/caroline-raspberry.jpg" alt="Caroline raspberry plant with red berries" class="w-full h-48 object-cover">
+<img src="images/caroline-raspberry.webp" alt="Caroline raspberry plant with red berries" class="w-full h-48 object-cover">
 ```
 
 ### Step 4: Recommended Image Sources
@@ -134,8 +134,9 @@ If you want to get started quickly, you can use high-quality stock photos from U
 - **Alt Text**: Always include descriptive alt text for accessibility
 
 ## File Size Optimization:
-Before uploading, compress images to ~100-200KB each using:
-- **Online tools**: TinyPNG, Squoosh.app
-- **Image editors**: Photoshop, GIMP (export at 80% quality)
+Before uploading, convert and compress images to WebP format (~50-150KB each) using:
+- **Online tools**: Squoosh.app (Google's WebP converter), TinyPNG
+- **Image editors**: Photoshop, GIMP (export as WebP at 80-85% quality)
+- **Command line**: `cwebp input.jpg -q 80 -o output.webp`
 
-This approach ensures fast loading times while maintaining visual quality.
+WebP format provides 25-35% better compression than JPEG while maintaining quality, ensuring faster loading times.
